@@ -14,6 +14,8 @@ body{
     gap: 3rem;
     margin: 0;
     padding: 0;
+    justify-content: center;   /* Centers horizontally */
+    align-items: center; 
   }
   .navbar-menu li  {
     display: flex;             /* Enables Flexbox */
@@ -30,8 +32,9 @@ body{
     color: #fff;
     text-decoration: none;
     font-size: 30px;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Bungee', sans-serif;
     gap:30px;
+    
   }
   
   .barLogo{
