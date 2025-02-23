@@ -1,19 +1,41 @@
+body{
+  background-color: rgb(34, 34, 39);  
+}
+
+
 .navbar {
-    background-color: #222;
-    padding: 1rem;
+    background-color: rgb(213, 142, 0);
+    padding: .5rem;
   }
   
   .navbar-menu {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     margin: 0;
     padding: 0;
+  }
+  .navbar-menu li  {
+    display: flex;             /* Enables Flexbox */
+    justify-content: center;   /* Centers horizontally */
+    align-items: center;       /* Centers vertically */
+    height: 50px;              /* Set height to see vertical centering effect */
+    list-style: none;
+    border-right: 0.2em solid ;
+    padding-right: 2em;
+    border-color:rgb(34, 34, 39) ;
   }
   
   .navbar-menu li a {
     color: #fff;
     text-decoration: none;
+    font-size: 30px;
     font-family: 'Press Start 2P', cursive;
+    gap:30px;
   }
   
+  .barLogo{
+    height: 4em;
+    width: 4em;
+    border-radius: 70%;
+  }
