@@ -1,6 +1,6 @@
 /* Global background */
 body {
-    background-color: rgb(34, 34, 39);
+    background-color: rgb(30, 36, 46);
 }
 
 /* Navbar styles */
@@ -15,7 +15,13 @@ body {
     /* Ensures it spans full width */
     z-index: 100;
     /* Keeps navbar above other content */
+    border-bottom: 0.1em solid rgb(34, 34, 39);
+
+    
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 
 .navbar-menu {
@@ -116,6 +122,8 @@ body {
     background-size: cover;
     background-position: center;
     height: 95vh;
+    margin: 4rem auto; /* Centers the section with vertical spacing */
+    max-width: 150em; /* Keeps it nicely centered and readable */
     display: flex;
     flex-direction: column;   
     justify-content: flex-start; 
@@ -125,6 +133,26 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
+
+.about-section {
+    max-width: 130em; /* Keeps it nicely centered and readable */
+    margin: 4rem auto; /* Centers the section with vertical spacing */
+    height: 95vh;
+    background-color: rgb(213, 142, 0);
+    /* background-image: url("");
+        background-size: cover;
+    background-position: center; */
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    color: #f0f0f0; /* Light text for contrast */
+    font-family: 'Bungee', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Subtle glow */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Makes text pop */
+  }
+  
 
 /* 
 GIF Credit:
@@ -148,7 +176,7 @@ Platform: Giphy
 /* Reserve Button Styling */
 .reserve-btn {
    background-color: rgb(213, 142, 0);
-   color: #1a1a1a;
+   color: #fffdfd;
     font-family: 'Bungee', sans-serif;
     font-size: 25px;
     padding: 15px 30px;
@@ -187,16 +215,20 @@ Platform: Giphy
     padding-top: 10em;
 }
 
-.aboutSection{
-    background-size: cover;
-    background-position: center;
-    height: 95vh;
-    display: flex;
-    flex-direction: column;   
-    justify-content: flex-start; 
-    align-items: center;    
-    padding-top: 5vh;       
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    text-align: center; 
+  .about-section p {
+    margin: 0;
+    font-size: 1.8em;
+  }
+  
+  .about-section span {
+    background-color: rgb(213, 142, 0);
+    border-radius: 5px;
+    font-weight: bold;
+  }
+.aboutTitle{
+    font-size: 5em;
+}
+
+.aboutContent{
+    padding-top: 15em;
 }
