@@ -114,12 +114,16 @@ body {
 .hero-section {
     background-image: url('https://media1.giphy.com/media/pCpxOaBcLtWyNpL2xW/giphy.gif?cid=6c09b952bbu1smra1f90mutkg4oqg5yakncqhhu4qoyu9m2d&ep=v1_gifs_search&rid=giphy.gif&ct=g');
     background-size: cover;
-    height: 130vh;
+    background-position: center;
+    height: 95vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;   
+    justify-content: flex-start; 
+    align-items: center;    
+    padding-top: 5vh;       
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 /* 
@@ -129,17 +133,22 @@ Source: https://giphy.com/gifs/deadstaticdrive-indiegames-dsd-dead-static-drive-
 Platform: Giphy
 */
 
+.hero-section h2 {
+    font-size: 30px;
+    font-family: 'Bungee', sans-serif;
+    margin-bottom: 0.3em;   /* Space between h2 and h1 */
+}
+
 .hero-section h1 {
-    padding-bottom: 30em;
     font-size: 50px;
     font-family: 'Bungee', sans-serif;
+    margin-bottom: 0.7em;   /* Space between h1 and button */
 }
 
 /* Reserve Button Styling */
 .reserve-btn {
-   background-color: rgb(170, 0,44);
-    /* Neon green */
-    color: #1a1a1a;
+   background-color: rgb(213, 142, 0);
+   color: #1a1a1a;
     /* Dark text for contrast */
     font-family: 'Bungee', sans-serif;
     font-size: 20px;
@@ -150,16 +159,27 @@ Platform: Giphy
     text-decoration: none;
     display: inline-block;
     transition: all 0.3s ease, transform 0.2s ease;
-    /* box-shadow: 0 0 15px #0f0, 0 0 30px #0f0; */
+    width:15em;
+    
 }
 
-/* Hover Effect */
+/* Hover Effect, might delete shadow glow */
 .reserve-btn:hover {
-    background-color: #fff;
-    /* White on hover */
-    color: rgb(0, 255, 0);
-    /* Neon green text */
+    background-color: rgb(170, 0,44);
+    color: rgb(0, 0, 0);
     transform: scale(1.1);
-    /* Slight zoom effect */
-    box-shadow: 0 0 20px #0f0, 0 0 40px #0f0, 0 0 60px #0f0;
+    box-shadow: 0 0 20px rgb(244, 224, 100), 0 0 40px rgb(170, 0,44);
+
+}
+
+.hero-description{
+    display: flex;
+    font-size: 2em;
+    font-family: 'Bungee', sans-serif;
+
+  
+}
+
+.hero-content{
+  margin-top: 22em;;
 }
