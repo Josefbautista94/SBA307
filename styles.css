@@ -186,3 +186,17 @@ Platform: Giphy
 .reserve-section{
     padding-top: 10em;
 }
+
+.aboutSection{
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;   
+    justify-content: flex-start; 
+    align-items: center;    
+    padding-top: 5vh;       
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center; 
+}
