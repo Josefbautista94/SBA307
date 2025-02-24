@@ -236,7 +236,7 @@ Platform: Giphy
     background-image: url('https://media1.giphy.com/media/pCpxOaBcLtWyNpL2xW/giphy.gif?cid=6c09b952bbu1smra1f90mutkg4oqg5yakncqhhu4qoyu9m2d&ep=v1_gifs_search&rid=giphy.gif&ct=g');
     background-size: cover;
     background-position: center;
-    height: 95vh;
+    height: 115vh;
     margin: 4rem auto; /* Centers the section with vertical spacing */
     max-width: 150em; /* Keeps it nicely centered and readable */
     display: flex;
@@ -290,5 +290,16 @@ Platform: Giphy
   .menu-table tr:hover {
     background-color: rgba(213, 142, 0, 0.6); 
     transition: background-color 0.3s ease;
+  }
+  
+  .tableSection {
+    display: flex;
+    flex-direction: row;        
+    justify-content: center;   
+    align-items: flex-start;   
+    flex-wrap: wrap;            
+    gap: 2rem;                
+    width: 100%;
+    padding: 2rem 0;
   }
   
