@@ -67,7 +67,7 @@ html {
 }
 
 .navbar-menu li a:hover {
-    color: #0f0;
+    color:  rgb(170, 0,44);
     /* cool color? */
 }
 
@@ -108,7 +108,8 @@ html {
 }
 
 .dropdown-menu li a:hover {
-    background-color: #0f0;
+    background-color:rgb(170, 0,44);
+
     color: #1a1a1a;
 }
 
