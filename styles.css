@@ -425,12 +425,20 @@ Platform: Giphy
     }
   }
   .events-page {
-    max-width: 1200px;
-    margin: 6rem auto 2rem;
-    padding: 2rem;
-    background-color: rgba(0, 0, 0, 0.85);
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    background-image: url('https://media1.giphy.com/media/pCpxOaBcLtWyNpL2xW/giphy.gif?cid=6c09b952bbu1smra1f90mutkg4oqg5yakncqhhu4qoyu9m2d&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    margin: 4rem auto; /* Centers the section with vertical spacing */
+    max-width: 150em; /* Keeps it nicely centered and readable */
+    display: flex;
+    flex-direction: column;   
+    justify-content: flex-start; 
+    align-items: center;    
+    padding-top: 5vh;       
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
   }
   
   .section-title {
