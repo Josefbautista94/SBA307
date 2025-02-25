@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arcade Alehouse</title>
+  <title>Events & Reservations | Arcade Alehouse</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 </head>
@@ -14,20 +14,99 @@
     <ul class="navbar-menu">
       <li><img src="ArcadeAlehouse.webp" class="barLogo" alt="Arcade Alehouse Logo"></li>
       <li><a href="index.html">Home</a></li>
-      <li><a href="menu.html">Menu & Games</a></li>
+      <li><a href="page2.html">Menu & Games</a></li>
       <li class="dropdown">
-        <a href="#">Events & Reservations</a>
+        <a href="page3.html">Events & Reservations</a>
         <ul class="dropdown-menu">
-          <li><a href="events.html">Upcoming Events</a></li>
-          <li><a href="tournaments.html">Tournaments</a></li>
-          <li><a href="happy-hours.html">Happy Hours</a></li>
-          <li><a href="reserve.html">Reserve a Table</a></li>
+          <li><a href="#upcoming-events">Upcoming Events</a></li>
+          <li><a href="#tournaments">Tournaments</a></li>
+          <li><a href="#happy-hours">Happy Hours</a></li>
+          <li><a href="#reserve">Reserve a Table</a></li>
         </ul>
       </li>
-
-      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#about">About</a></li>
     </ul>
   </nav>
+
+  <div class="events-page">
+    <section id="upcoming-events" class="events-section">
+      <h1 class="section-title">Upcoming Events</h1>
+      <ul class="event-list">
+        <li><strong>Trivia Night:</strong> Every Wednesday at 7 PM - Test your knowledge and win prizes!</li>
+        <li><strong>Live DJ Saturdays:</strong> Dance and drink every Saturday night from 9 PM.</li>
+        <li><strong>80s Arcade Throwback:</strong> First Friday of every month - Dress up and enjoy classic games.</li>
+      </ul>
+    </section>
+
+    <section id="tournaments" class="events-section">
+      <h1 class="section-title">Tournaments</h1>
+      <table class="menu-table">
+        <thead>
+          <tr>
+            <th>Tournament</th>
+            <th>Date</th>
+            <th>Entry Fee</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Street Fighter II Showdown</td>
+            <td>March 15, 2025</td>
+            <td>$10</td>
+          </tr>
+          <tr>
+            <td>Mario Kart Grand Prix</td>
+            <td>March 22, 2025</td>
+            <td>$15</td>
+          </tr>
+          <tr>
+            <td>Pac-Man High Score Challenge</td>
+            <td>March 29, 2025</td>
+            <td>Free</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="happy-hours" class="events-section">
+      <h1 class="section-title">Happy Hours</h1>
+      <p>Join us for happy hour specials every weekday from 4 PM to 7 PM!</p>
+      <ul class="happy-hour-list">
+        <li>$5 Craft Beers</li>
+        <li>$7 Cocktails</li>
+        <li>Half-Price Appetizers</li>
+      </ul>
+    </section>
+
+    <section id="reserve" class="reservation-section">
+      <h1 class="section-title">Reserve a Table</h1>
+      <form class="reservation-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="guests">Number of Guests:</label>
+        <select id="guests" name="guests" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6+">6+</option>
+        </select>
+
+        <button type="submit" class="reserve-btn">Submit Reservation</button>
+      </form>
+    </section>
+  </div>
 </body>
 
 </html>
