@@ -300,14 +300,14 @@ Platform: Giphy
     padding: 2rem 0;
   }
   
-  /* Medium Devices (Tablets) */
+
 @media (max-width: 768px) {
     body {
-        padding-top: 25em; /* Matches smaller navbar */
+        padding-top: 25em; 
       }
     .navbar-menu {
         flex-direction: column;
-        gap: 0.5rem;   /* Smaller padding for compactness */
+        gap: 0.5rem;   
 
     }
   
@@ -355,7 +355,7 @@ Platform: Giphy
       flex-direction: column;
       gap: 0.3rem;
             font-size: 15px;
-            padding: 0;              /* Remove extra padding */
+            padding: 0;              /* Removes extra padding! */
 
     }
   
@@ -403,12 +403,12 @@ Platform: Giphy
     .navbar-menu li {
       width: 100%;
       text-align: left;
-      padding: 0.2rem 0;       /* Less vertical padding */
+      padding: 0.2rem 0;       
       border-right: none;
     }
   
     .navbar-menu li a {
-        font-size: 14px;         /* Smaller font for compactness */
+        font-size: 14px;        
     }
   }
   
@@ -497,8 +497,8 @@ Platform: Giphy
   
   /* Reservation Form */
   .reservation-section {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 4rem;
     border-radius: 12px;
     margin-top: 3rem;
   }
@@ -544,22 +544,61 @@ Platform: Giphy
   
   /* Responsive Design */
   @media (max-width: 768px) {
-    .reservation-form {
-      grid-template-columns: 1fr;
+    .holder, .tour-happy {
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: center; 
     }
   
     .section-title {
-      font-size: 2rem;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  
+    .menu-table {
+      width: 100%;
+      overflow-x: auto;
+      display: block;
     }
   
     .menu-table th, .menu-table td {
       font-size: 0.9rem;
+      padding: 0.6rem;
     }
   
-    .navbar-menu {
-      flex-direction: column;
+    .happy-hour-list li {
+      font-size: 1rem;
+    }
+  
+    .reservation-form {
+      display: flex;
+      flex-direction: column; 
       gap: 1rem;
+      width: 100%;
+    }
+  
+    .reservation-form label {
+      font-size: 1rem;
+    }
+  
+    .reservation-form input,
+    .reservation-form select {
+      font-size: 1rem;
+      padding: 0.8rem;
+      width: 100%;
+    }
+  
+    .reserve-btn {
+      width: 100%;
+      font-size: 1rem;
+      padding: 0.8rem;
     }
   }
+  .holder{
+    display: flex;
+    gap: 10em;
+    
+  }
+
   
   
